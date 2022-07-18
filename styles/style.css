@@ -1,10 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
 /********** Deafult Stying ***********/
 
 * {
-    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/************** Utilities *************/
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #3a3a3a;
+    
+}
+
+header {
+    width: 85vw;
+    margin: 4.375em 7.5em 3.125em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/************** Navigation **************/
+
+nav .nav__logo h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+nav .nav__links {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 2.125em;
+}
+
+nav .nav__links .nav__link {
+    margin: 0 auto;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    color: inherit;
+    transform: all .3s;
+}
+
+nav .nav__links .nav__link:hover {
+    color: #3a3a3ac2;
+}
+
+nav .nav__links .nav__link i {
+    font-size: 1.5em;
 }
