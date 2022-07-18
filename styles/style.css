@@ -137,3 +137,28 @@ header .hero__section {
 .fa-arrow-right {
     margin-left: 8px;
 }
+
+/********** Testimonial **********/
+
+.testimonial {
+    margin-top: 170px;
+    margin-bottom: 100px;
+
+    display: flex;
+    justify-content: center;
+
+    border-top: 1px solid #3a3a3a50;
+    border-bottom: 1px solid #3a3a3a50;
+}
+
+.testimonial .svg__items {
+    width: 100%;
+    
+    padding: 36px 62px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
