@@ -18,16 +18,31 @@ body {
 
 header {
     width: 85vw;
-    margin: 4.375em 7.5em 3.125em;
+    margin: 4.375em 7.5em 0;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 3.125em;
+}
+
+h1 {
+    font-size: 3.2em;
+}
+
+
+
+p {
+    font-size: 1em;
+    font-weight: 600;
 }
 
 /************** Navigation **************/
+nav .nav__logo {
+    transition: all .5s;
+}
 
 nav .nav__logo h2 {
     font-size: 1.5em;
@@ -46,13 +61,79 @@ nav .nav__links .nav__link {
     font-weight: 600;
     text-decoration: none;
     color: inherit;
-    transform: all .3s;
+    transform: all .5s;
 }
 
-nav .nav__links .nav__link:hover {
+nav .nav__links .nav__link:hover, nav .nav__logo:hover {
     color: #3a3a3ac2;
 }
 
 nav .nav__links .nav__link i {
     font-size: 1.5em;
+}
+
+/********** Hero Section *************/
+header .hero__section {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+
+    margin-top: 140px;
+}
+
+.hero__section .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.hero__section .heading h1 {
+    margin-bottom: 16px;
+}
+
+.hero__section .heading p {
+    margin-bottom: 24px;
+}
+
+.heading__img {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.heading__img img {
+    top: -70px;
+    right: 0;
+    position: absolute;
+    z-index: 2;
+}
+
+.heading__img svg {
+    width: 90%;
+    top: -90px;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.btn {
+    background-color: #E02C6D;
+    font-size: 1em;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+
+    padding: .625em 1.5em;
+    border-radius: 2.563em;
+
+    transition: all .5s;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 10px #3a3a3a3a;
+}
+
+.fa-arrow-right {
+    margin-left: 8px;
 }
