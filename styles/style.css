@@ -16,8 +16,12 @@ body {
     
 }
 
-header, main {
+header {
     margin: 0 120px;
+}
+
+main {
+    margin: 0 196px;
 }
 
 
@@ -32,6 +36,10 @@ nav {
 
 
 /************** Navigation **************/
+nav .nav__bar {
+    display: none;
+}
+
 nav .nav__logo {
     transition: all .5s;
     cursor: pointer;
@@ -122,7 +130,7 @@ nav .nav__logo h2 {
     box-shadow: 0 10px 15px #3a3a3a42;
 }
 
-.btn i {
+.btn i, .btn__more i {
     margin-left: 8px;
 }
 
@@ -150,8 +158,96 @@ nav .nav__logo h2 {
 
     padding: 36px 62px;
     margin-bottom: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 
 /* Main Section */
 
+/************* Popular Collection **********/
+.popular {
+    /* border: 1px solid indianred; */
+    margin-bottom: 100px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.popular h2 {
+    font-size: 28px;
+    align-items: center;
+    font-weight: 600;
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+
+    margin-bottom: 50px;
+}
+
+.item {
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+
+    padding: 15px;
+}
+
+.item img {
+    margin-bottom: 16px;
+}
+
+.item h3 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.item h4 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.item__rating {
+    margin-bottom: 6px;
+}
+
+.item .item__rating i {
+    font-size: 11px;
+    color: #FB8200;
+}
+
+.item .item__rating span {
+    font-size: 14px;
+
+    color: #5E6366;
+    margin-left: 6px;
+    letter-spacing: .1px;
+}
+
+.item p {
+    font-size: 14px;
+    font-weight: 700;
+    color: #787885;
+}
+
+.btn__more {
+    text-decoration: none;
+    color: #E02C6D;
+    font-weight: 700;
+    background-color: transparent;
+
+    align-self: flex-end;
+
+    transition: all .3s;
+}
+
+.btn__more:hover {
+    transform: translateY(-5px);
+}
