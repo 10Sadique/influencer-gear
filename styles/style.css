@@ -34,6 +34,13 @@ nav {
     margin: 90px 0 150px;
 }
 
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0A0826;
+}
+
 
 /************** Navigation **************/
 nav .nav__bar {
@@ -286,7 +293,7 @@ nav .nav__logo h2 {
 }
 
 .featured__info p {
-    
+
     color: #6C6C6C;
     font-weight: 700;
     margin-bottom: 30px;
@@ -294,4 +301,52 @@ nav .nav__logo h2 {
 
 .btn__join {
     border-radius: 0;
+}
+
+/************* Footer *************/
+.footer {
+    margin: 50px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer h1 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.footer p {
+    color: #D9DBE1;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.social {
+    margin-top: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.social a {
+    width: 32px;
+    height: 32px;
+    background-color: #d9dbe160;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+}
+
+.social i {
+    color: #fff;
+    cursor: pointer;
 }
