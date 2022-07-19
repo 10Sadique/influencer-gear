@@ -401,11 +401,12 @@ nav .nav__logo h2 {
     }
 
     .hero__info h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .hero__info p {
-        font-size: 19px;
+        width: 100%;
+        font-size: 16px;
         font-weight: 500;
     }
 
@@ -419,9 +420,11 @@ nav .nav__logo h2 {
         border: none;
         flex-wrap: wrap;
         padding: 0;
+        margin: 0 0 50px;
     }
     .testimonial img {
         padding: 10px;
+        width: 25%;
     }
 
     /* Main */
@@ -439,7 +442,7 @@ nav .nav__logo h2 {
     }
 
     .item {
-        padding: 25px;
+        padding: 20px;
     }
 
     .item img {
@@ -482,7 +485,7 @@ nav .nav__logo h2 {
     }
 
     .featured__info p {
-        width: 80%;
+        width: 90%;
         font-size: 20px;
         font-weight: 700;
         line-height: 30px;
@@ -494,7 +497,15 @@ nav .nav__logo h2 {
     }
 
     /* Footer */
+    .footer h1 {
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
     .footer p {
         margin-bottom: 6px;
+        font-weight: 500;
+        font-size: 12px;
+        text-align: center;
     }
 }
