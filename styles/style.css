@@ -21,7 +21,7 @@ header {
 }
 
 main {
-    margin: 0 196px;
+    margin: 0 165px;
 }
 
 
@@ -169,6 +169,8 @@ nav .nav__logo h2 {
 .popular {
     /* border: 1px solid indianred; */
     margin-bottom: 100px;
+    margin-left: 31px;
+    margin-right: 31px;
 
     display: flex;
     flex-direction: column;
@@ -201,6 +203,7 @@ nav .nav__logo h2 {
 
 .item img {
     margin-bottom: 16px;
+    width: 100%;
 }
 
 .item h3 {
@@ -251,3 +254,4 @@ nav .nav__logo h2 {
 .btn__more:hover {
     transform: translateY(-5px);
 }
+
