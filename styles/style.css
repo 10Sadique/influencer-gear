@@ -337,7 +337,7 @@ nav .nav__logo h2 {
 .social a {
     width: 32px;
     height: 32px;
-    background-color: #d9dbe160;
+    background-color: #d9dbe115;
 
     display: flex;
     align-items: center;
@@ -349,4 +349,152 @@ nav .nav__logo h2 {
 .social i {
     color: #fff;
     cursor: pointer;
+}
+
+/* Media Queries */
+
+/* Mobile Devices */
+@media screen and (max-width: 576px) {
+
+    /* Navigation */
+    header {
+        margin: 0 30px;
+    }
+
+    nav {
+        margin: 35px 0;
+    }
+
+    nav .nav__bar {
+        display: block;
+        width: 35px;
+        font-size: 24px;
+    }
+
+    .nav__link {
+        font-size: 24px;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav__link:hover {
+        transform: translate(0);
+        box-shadow: none;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    /* Hero */
+    .hero {
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+
+    .hero__info {
+        margin: 20px 0 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero__info h1 {
+        font-size: 40px;
+    }
+
+    .hero__info p {
+        font-size: 19px;
+        font-weight: 500;
+    }
+
+    .btn {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    /* Testimonial */
+    .testimonial {
+        border: none;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .testimonial img {
+        padding: 10px;
+    }
+
+    /* Main */
+    main {
+        margin: 0 30px;
+    }
+
+    /* Popular Collection */
+    .popular {
+        margin: 0;
+    }
+
+    .items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .item {
+        padding: 25px;
+    }
+
+    .item img {
+        border-radius: 10px;
+    }
+
+    .item h3, .item h4 {
+        font-weight: 700;
+    }
+
+    .item .item__rating i {
+        font-size: 16px;
+    }
+
+    .item .item__rating span {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .item p {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    /* Featured */
+    .featured {
+        flex-direction: column-reverse;
+        margin-top: 100px;
+    }
+
+    .featured__info {
+        align-items: center;
+        margin: 0;
+        text-align: center;
+    }
+
+    .featured__info h2 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .featured__info p {
+        width: 80%;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+
+    .btn__join {
+        margin-bottom: 30px;
+        font-weight: 700;
+    }
+
+    /* Footer */
+    .footer p {
+        margin-bottom: 6px;
+    }
 }
