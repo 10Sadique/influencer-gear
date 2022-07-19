@@ -21,7 +21,7 @@ header {
 }
 
 main {
-    margin: 0 165px;
+    margin: 0 155px;
 }
 
 
@@ -169,8 +169,8 @@ nav .nav__logo h2 {
 .popular {
     /* border: 1px solid indianred; */
     margin-bottom: 100px;
-    margin-left: 31px;
-    margin-right: 31px;
+    margin-left: 41px;
+    margin-right: 41px;
 
     display: flex;
     flex-direction: column;
@@ -255,3 +255,43 @@ nav .nav__logo h2 {
     transform: translateY(-5px);
 }
 
+/******** Featured **********/
+.featured {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 100px;
+}
+
+
+.featured img {
+    width: 80%;
+}
+
+.featured__info {
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+.featured__info h2 {
+    color: #0A0826;
+    font-size: 34px;
+    font-weight: 700;
+
+    margin-bottom: 16px;
+}
+
+.featured__info p {
+    
+    color: #6C6C6C;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.btn__join {
+    border-radius: 0;
+}
